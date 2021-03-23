@@ -14,7 +14,7 @@ class Kattintgato:
     def up(self):
         print("up")
 
-    def init(self):
+    def __init__(self):
         self.scr.onclick(self.klikk)
 
         self.scr.onkey(self.up, "Escape")
