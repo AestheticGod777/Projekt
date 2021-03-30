@@ -31,7 +31,7 @@ class Kattintgato:
             self.trapez()
         self.turtle.penup()
         self.turtle.left(90)
-        self.turtle.forward(98)
+        self.turtle.forward(101)
         self.turtle.pendown()
         self.turtle.left(135)
         self.turtle.forward(20)
