@@ -20,12 +20,19 @@ class SampleClock:
         self.minturtle.speed(0)
         self.hourturtle._delay(0)
         self.hourturtle.speed(0)
-
         self.clk.setOnSecondChangeListener(self.writeSec)
         self.clk.setOnMinuteChangeListener(self.writeMin)
         self.clk.setOnHourChangeListener(self.writeHour)
 
         self.scr.mainloop()
+
+# NEM JÓ!!!
+    # def teszt(self):
+    #     print(str(self.clk.leftNumber(self.clk.sec())))
+    #     if str(self.clk.leftNumber(self.clk.sec())) == 0:
+    #         print("Nullaaaaaaaa")
+
+
 
     def printToConsole(self):
         print(str(self.clk.leftNumber(self.clk.hour24())) + str(self.clk.rightNumber(self.clk.hour24())) + ":" + (str(self.clk.leftNumber(self.clk.min())) + str(self.clk.rightNumber(self.clk.min()))) + ":" + (str(self.clk.leftNumber(self.clk.sec())) + str(self.clk.rightNumber(self.clk.sec()))))
@@ -33,6 +40,7 @@ class SampleClock:
 
     def writeSec(self):
         self.printToConsole()
+        # self.teszt()
         self.secturtle.clear()
         self.secturtle.reset()
 
