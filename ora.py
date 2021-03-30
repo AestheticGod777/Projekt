@@ -22,5 +22,3 @@ class Kattintgato:
 
         self.scr.mainloop()
 
-
-Kattintgato()
