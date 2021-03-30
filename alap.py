@@ -1,0 +1,38 @@
+def alap(self):
+    self.turtle.penup()
+    self.turtle.forward(150)
+    self.turtle.pendown()
+    self.turtle.fillcolor("gray")
+    self.turtle.begin_fill()
+    for i in range(180):
+        self.turtle.left(1)
+        self.turtle.forward(3)
+    self.turtle.forward(360)
+    for i in range(180):
+        self.turtle.left(1)
+        self.turtle.forward(3)
+    self.turtle.forward(360)
+    self.turtle.end_fill()
+    self.turtle.fillcolor("black")
+    self.turtle.begin_fill()
+    for i in range(180):
+        self.turtle.left(1)
+        self.turtle.forward(2)
+    self.turtle.forward(360)
+    for i in range(180):
+        self.turtle.left(1)
+        self.turtle.forward(2)
+    self.turtle.forward(360)
+    self.turtle.end_fill()
+    for i in range(180):
+        self.turtle.left(1)
+        self.turtle.forward(2)
+    self.turtle.right(90)
+    self.turtle.forward(115)
+    self.turtle.backward(115)
+    self.turtle.left(90)
+    self.turtle.forward(360)
+    self.turtle.right(90)
+    self.turtle.forward(115)
+    self.turtle.backward(115)
+    self.turtle.pendown()
