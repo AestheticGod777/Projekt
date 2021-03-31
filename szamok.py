@@ -3,7 +3,6 @@ from turtle import *
 
 class Kattintgato:
 
-    screen = Screen()
     turtle = Turtle()
 
     def trapezbal(self):
@@ -191,9 +190,27 @@ class Kattintgato:
         self.emerald()
 
     def __init__(self):
+
         self.turtle.speed(0)
-        self.kilenc()
 
-        self.screen.mainloop()
-
-Kattintgato()
+        #self.kilenc()
+screen = Screen()
+szam0 = Kattintgato()
+szam0.nulla()
+szam1 = Kattintgato()
+szam1.egy()
+szam2 = Kattintgato()
+szam2.ketto()
+szam3 = Kattintgato()
+szam3.harom()
+szam4 = Kattintgato()
+szam4.negy()
+szam5 = Kattintgato()
+szam5.ot()
+szam6 = Kattintgato()
+szam6.hat()
+szam7 = Kattintgato()
+szam7.het()
+szam8 = Kattintgato()
+szam8.nyolc()
+screen.mainloop()
