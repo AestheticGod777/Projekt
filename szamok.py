@@ -1,7 +1,7 @@
 from turtle import *
 
 
-class Kattintgato:
+class Kattingato:
 
     turtle = Turtle()
 

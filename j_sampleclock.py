@@ -26,11 +26,10 @@ class SampleClock:
 
         self.scr.mainloop()
 
-# NEM JÓ!!!
-    # def teszt(self):
-    #     print(str(self.clk.leftNumber(self.clk.sec())))
-    #     if str(self.clk.leftNumber(self.clk.sec())) == 0:
-    #         print("Nullaaaaaaaa")
+
+    def teszt(self):
+        if (self.clk.leftNumber(self.clk.sec())) == 0:
+            print("Nulla")
 
 
 
@@ -40,7 +39,7 @@ class SampleClock:
 
     def writeSec(self):
         self.printToConsole()
-        # self.teszt()
+        self.teszt()
         self.secturtle.clear()
         self.secturtle.reset()
 
