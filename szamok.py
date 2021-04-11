@@ -1,7 +1,7 @@
 from turtle import *
 
 
-class Kattingato:
+class Szamok:
 
     turtle = Turtle()
 
@@ -190,27 +190,18 @@ class Kattingato:
         self.emerald()
 
     def __init__(self):
-
         self.turtle.speed(0)
 
-        #self.kilenc()
 screen = Screen()
-szam0 = Kattintgato()
-szam0.nulla()
-szam1 = Kattintgato()
-szam1.egy()
-szam2 = Kattintgato()
-szam2.ketto()
-szam3 = Kattintgato()
-szam3.harom()
-szam4 = Kattintgato()
-szam4.negy()
-szam5 = Kattintgato()
-szam5.ot()
-szam6 = Kattintgato()
-szam6.hat()
-szam7 = Kattintgato()
-szam7.het()
-szam8 = Kattintgato()
-szam8.nyolc()
+szam0 = Szamok()
+szam1 = Szamok()
+szam2 = Szamok()
+szam3 = Szamok()
+szam4 = Szamok()
+szam5 = Szamok()
+szam6 = Szamok()
+szam7 = Szamok()
+szam8 = Szamok()
+szam9 = Szamok()
 screen.mainloop()
+

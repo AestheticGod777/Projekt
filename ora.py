@@ -21,4 +21,3 @@ class Kattintgato:
         self.scr.listen()
 
         self.scr.mainloop()
-

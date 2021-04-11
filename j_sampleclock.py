@@ -53,4 +53,3 @@ class SampleClock:
     def writeHour(self):
         self.hourturtle.clear()
         self.hourturtle.reset()
-
