@@ -9,6 +9,8 @@ class Szamok:
         hosszuvonal = 98
         rovidvonal = 20
         kozepesvonal = 70
+        self.turtle.fillcolor('red')
+        self.turtle.begin_fill()
         self.turtle.forward(hosszuvonal)
         self.turtle.left(135)
         self.turtle.forward(rovidvonal)
@@ -20,11 +22,14 @@ class Szamok:
         self.turtle.penup()
         self.turtle.forward(100)
         self.turtle.pendown()
+        self.turtle.end_fill()
 
     def trapezjobb(self):
         hosszuvonal = 98
         rovidvonal = 20
         kozepesvonal = 70
+        self.turtle.fillcolor('red')
+        self.turtle.begin_fill()
         self.turtle.left(180)
         self.turtle.forward(hosszuvonal)
         self.turtle.right(135)
@@ -37,8 +42,11 @@ class Szamok:
         self.turtle.penup()
         self.turtle.forward(100)
         self.turtle.pendown()
+        self.turtle.end_fill()
 
     def emerald(self):
+        self.turtle.fillcolor('red')
+        self.turtle.begin_fill()
         self.turtle.left(225)
         self.turtle.forward(20)
         self.turtle.right(45)
@@ -52,6 +60,7 @@ class Szamok:
         self.turtle.right(45)
         self.turtle.forward(20)
         self.turtle.right(45)
+        self.turtle.end_fill()
 
     def nulla(self):
         for i in range(2):
