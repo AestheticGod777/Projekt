@@ -3,7 +3,7 @@ from turtle import *
 
 class Szamok:
 
-    turtle = Turtle()
+    turtle : Turtle
 
     def trapezbal(self):
         hosszuvonal = 98
@@ -190,18 +190,8 @@ class Szamok:
         self.emerald()
 
     def __init__(self):
+        self.turtle = Turtle()
         self.turtle.speed(0)
 
-screen = Screen()
-szam0 = Szamok()
-szam1 = Szamok()
-szam2 = Szamok()
-szam3 = Szamok()
-szam4 = Szamok()
-szam5 = Szamok()
-szam6 = Szamok()
-szam7 = Szamok()
-szam8 = Szamok()
-szam9 = Szamok()
-screen.mainloop()
+
 

@@ -11,10 +11,12 @@ class Clock:
     _dsp_sec: int = -1
     _dsp_hour: int = -1
     frequency: int = 100
+    screen = Screen()
 
     def __init__(self, scr: TurtleScreen):
         self._scr = scr
         self._handleEvents()
+
 
     def UTC(self) -> str:
         return str(self._t.utcnow())
@@ -81,4 +83,6 @@ class Clock:
 
     def rightNumber(self, num: int) -> int:
         return num % 10
+
+
     

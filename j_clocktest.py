@@ -1,4 +1,3 @@
-from j_sampleclock import SampleClock
-
+from j_sampleclock import *
 
 SampleClock()
