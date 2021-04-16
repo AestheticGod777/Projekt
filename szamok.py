@@ -62,19 +62,32 @@ class Szamok:
         self.turtle.end_fill()
 
     def nulla(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
         for i in range(2):
             self.turtle.left(90)
             self.trapezbal()
             self.trapezbal()
             self.turtle.left(90)
             self.trapezbal()
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
 
     def egy(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
         self.turtle.left(90)
         for i in range(2):
             self.trapezbal()
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
 
     def ketto(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
         self.trapezjobb()
         self.turtle.left(90)
         self.trapezjobb()
@@ -88,8 +101,16 @@ class Szamok:
         self.trapezbal()
         self.turtle.left(90)
         self.trapezbal()
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
 
     def harom(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
+
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
         self.trapezbal()
         self.turtle.left(90)
         self.trapezbal()
@@ -101,6 +122,9 @@ class Szamok:
         self.trapezbal()
 
     def negy(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
         self.turtle.left(90)
         self.trapezbal()
         self.trapezbal()
@@ -116,8 +140,16 @@ class Szamok:
         self.turtle.pendown()
         self.turtle.left(90)
         self.trapezjobb()
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
 
     def ot(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
+
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
         self.trapezbal()
         self.turtle.left(90)
         self.trapezbal()
@@ -133,6 +165,12 @@ class Szamok:
         self.trapezjobb()
 
     def hat(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
+
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
         self.trapezbal()
         self.turtle.left(90)
         self.trapezbal()
@@ -154,6 +192,12 @@ class Szamok:
         self.trapezjobb()
 
     def het(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
+
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
         self.turtle.left(90)
         self.trapezbal()
         self.trapezbal()
@@ -161,6 +205,12 @@ class Szamok:
         self.trapezbal()
 
     def nyolc(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
+
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
         for i in range(2):
             self.turtle.left(90)
             self.trapezbal()
@@ -175,6 +225,12 @@ class Szamok:
         self.emerald()
 
     def kilenc(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
+
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
         self.trapezbal()
         self.turtle.left(90)
         self.trapezbal()
