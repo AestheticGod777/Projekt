@@ -33,6 +33,7 @@ class SampleClock:
         self.hourright.turtle.clear()
         self.hourleft.turtle.clear()
         if (self.clk.leftNumber(self.clk.hour24())) == 0:
+            self.hourleft.turtle.clear()
             self.hourleft.turtle.speed(0)
             self.hourleft.nulla()
             self.hourleft.turtle.speed(0)
