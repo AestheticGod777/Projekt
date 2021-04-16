@@ -1,9 +1,8 @@
 from turtle import *
 
-
 class Szamok:
 
-    turtle : Turtle
+    screen = Screen()
 
     def trapezbal(self):
         hosszuvonal = 98
@@ -168,23 +167,12 @@ class Szamok:
             self.trapezbal()
             self.turtle.left(90)
             self.trapezbal()
-        self.turtle.penup()
         self.turtle.left(90)
+        self.turtle.penup()
         self.turtle.forward(101)
-        self.turtle.pendown()
-        self.turtle.left(135)
-        self.turtle.forward(20)
-        self.turtle.right(45)
-        self.turtle.forward(70)
-        self.turtle.right(45)
-        self.turtle.forward(20)
         self.turtle.right(90)
-        self.turtle.forward(20)
-        self.turtle.right(45)
-        self.turtle.forward(70)
-        self.turtle.right(45)
-        self.turtle.forward(20)
-        self.turtle.right(45)
+        self.turtle.pendown()
+        self.emerald()
 
     def kilenc(self):
         self.trapezbal()
@@ -201,6 +189,8 @@ class Szamok:
     def __init__(self):
         self.turtle = Turtle()
         self.turtle.speed(0)
+        self.nyolc()
 
+Szamok()
 
 
