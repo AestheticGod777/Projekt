@@ -189,8 +189,4 @@ class Szamok:
     def __init__(self):
         self.turtle = Turtle()
         self.turtle.speed(0)
-        self.nyolc()
-
-Szamok()
-
 
