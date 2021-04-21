@@ -181,6 +181,7 @@ class Szamok:
         self.trapezjobb()
         self.turtle.goto(x, y)
         self.turtle.setheading(rot)
+
     def het(self):
         x = self.turtle.xcor()
         y = self.turtle.ycor()
@@ -193,8 +194,7 @@ class Szamok:
         x = self.turtle.xcor()
         y = self.turtle.ycor()
         rot = self.turtle.heading()
-        for i in range(2):
-            self.het()
+        self.nulla()
         self.turtle.left(90)
         self.turtle.penup()
         self.turtle.forward(101)
@@ -219,3 +219,4 @@ class Szamok:
     def __init__(self):
         self.turtle = Turtle()
         self.turtle.speed(0)
+
