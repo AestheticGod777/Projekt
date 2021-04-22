@@ -11,17 +11,22 @@ class SampleClock:
     minuteright : Szamok
     hourleft : Szamok
     hourright : Szamok
+    pontrajzoloegy : Szamok
+    pontrajzoloketto: Szamok
     clk = Clock(scr)
 
 
     def __init__(self):
-        turtle = Turtle()
         self.secondleft = Szamok()
         self.secondright = Szamok()
         self.minuteleft = Szamok()
         self.minuteright = Szamok()
         self.hourleft = Szamok()
         self.hourright = Szamok()
+        self.pontrajzoloegy = Szamok()
+        self.pontrajzoloketto = Szamok()
+        self.pontrajzoloegy.turtle.left(90)
+        self.pontrajzoloketto.turtle.left(90)
         self.hourleft.turtle.backward(400)
         self.hourright.turtle.backward(280)
         self.minuteleft.turtle.backward(50)
@@ -30,6 +35,19 @@ class SampleClock:
         self.secondright.turtle.forward(270)
         self.clk.setOnSecondChangeListener(self.writeSec)
         self.scr.mainloop()
+
+
+    def emeraldka(self):
+        self.pontrajzoloegy.turtle.clear()
+        self.pontrajzoloegy.kotojel()
+        self.pontrajzoloegy.turtle.speed(0)
+        delay(0)
+
+    def emeraldkaketto(self):
+        self.pontrajzoloketto.turtle.clear()
+        self.pontrajzoloketto.kotojel()
+        self.pontrajzoloketto.turtle.speed(0)
+        delay(0)
 
     def teszt(self):
         self.secondleft.turtle.hideturtle()
@@ -374,6 +392,8 @@ class SampleClock:
 
     def writeSec(self):
         self.printToConsole()
+        self.emeraldka()
+        self.emeraldkaketto()
         self.teszt()
         self.teszt2()
         self.teszt3()

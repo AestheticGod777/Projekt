@@ -225,7 +225,8 @@ class Szamok:
         turtle.right(90)
         self.emerald()
         turtle.backward(hosszuvonal)
-        turtle.setheading(0)
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
 
     def kilenc(self, turtle):
         x = self.turtle.xcor()
@@ -282,6 +283,29 @@ class Szamok:
         self.turtle.forward(10)
         self.turtle.right(45)
         self.turtle.end_fill()
+
+    def kotojel(self):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
+        self.turtle.fillcolor('red')
+        self.turtle.begin_fill()
+        self.turtle.left(225)
+        self.turtle.forward(10)
+        self.turtle.right(45)
+        self.turtle.forward(35)
+        self.turtle.right(45)
+        self.turtle.forward(10)
+        self.turtle.right(90)
+        self.turtle.forward(10)
+        self.turtle.right(45)
+        self.turtle.forward(35)
+        self.turtle.right(45)
+        self.turtle.forward(10)
+        self.turtle.right(45)
+        self.turtle.end_fill()
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
 
     def kisnulla(self, turtle):
         x = self.turtle.xcor()
