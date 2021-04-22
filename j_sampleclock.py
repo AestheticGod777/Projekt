@@ -6,8 +6,6 @@ import time
 class SampleClock:
 
     scr = Screen()
-
-
     secondleft : Szamok
     secondright : Szamok
     minuteleft : Szamok
@@ -15,11 +13,12 @@ class SampleClock:
     hourleft : Szamok
     hourright : Szamok
     clk = Clock(scr)
-    isUpdated = False
 
 
     def __init__(self):
         turtle = Turtle()
+        self.secondleft = Szamok()
+        self.secondright = Szamok()
         self.minuteleft = Szamok()
         self.minuteright = Szamok()
         self.hourleft = Szamok()
@@ -29,10 +28,8 @@ class SampleClock:
         self.minuteleft.turtle.forward(60)
         self.minuteright.turtle.forward(210)
         self.clk.setOnSecondChangeListener(self.writeSec)
-        for i in range(360):
-            turtle.forward(1)
-            turtle.left(1)
         self.scr.mainloop()
+
     def teszt(self):
         self.hourright.turtle.clear()
         self.hourleft.turtle.clear()
@@ -238,6 +235,130 @@ class SampleClock:
             self.minuteright.turtle.speed(0)
             delay(0)
 
+    def teszt5(self):
+        self.secondright.turtle.clear()
+        self.secondleft.turtle.clear()
+        if (self.clk.rightNumber(self.clk.sec())) == 0:
+            self.secondright.turtle.speed(0)
+            self.secondright.kisnulla(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.rightNumber(self.clk.sec())) == 1:
+            self.secondright.turtle.speed(0)
+            self.secondright.kisegy(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.rightNumber(self.clk.sec())) == 2:
+            self.secondright.turtle.speed(0)
+            self.secondright.kisketto(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.rightNumber(self.clk.sec())) == 3:
+            self.secondright.turtle.speed(0)
+            self.secondright.kisharom(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.rightNumber(self.clk.sec())) == 4:
+            self.secondright.turtle.speed(0)
+            self.secondright.kisnegy(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.rightNumber(self.clk.sec())) == 5:
+            self.secondright.turtle.speed(0)
+            self.secondright.kisot(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.rightNumber(self.clk.sec())) == 6:
+            self.secondright.turtle.speed(0)
+            self.secondright.kishat(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.rightNumber(self.clk.sec())) == 7:
+            self.secondright.turtle.speed(0)
+            self.secondright.kishet(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.rightNumber(self.clk.sec())) == 8:
+            self.secondright.turtle.speed(0)
+            self.secondright.kisnyolc(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.rightNumber(self.clk.sec())) == 9:
+            self.secondright.turtle.speed(0)
+            self.secondright.kiskilenc(self.secondright.turtle)
+            self.secondright.turtle.speed(0)
+            delay(0)
+
+    def teszt6(self):
+        if (self.clk.leftNumber(self.clk.sec())) == 0:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kisnulla(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.leftNumber(self.clk.sec())) == 1:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kisegy(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.leftNumber(self.clk.sec())) == 2:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kisketto(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.leftNumber(self.clk.sec())) == 3:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kisharom(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.leftNumber(self.clk.sec())) == 4:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kisnegy(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.leftNumber(self.clk.sec())) == 5:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kisot(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.leftNumber(self.clk.sec())) == 6:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kishat(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.leftNumber(self.clk.sec())) == 7:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kishet(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.leftNumber(self.clk.sec())) == 8:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kisnyolc(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
+        if (self.clk.leftNumber(self.clk.sec())) == 9:
+            self.secondleft.turtle.speed(0)
+            self.secondleft.kiskilenc(self.secondleft.turtle)
+            self.secondleft.turtle.speed(0)
+            delay(0)
+
 
 
     def printToConsole(self):
@@ -250,5 +371,7 @@ class SampleClock:
         self.teszt2()
         self.teszt3()
         self.teszt4()
+        self.teszt5()
+        self.teszt6()
 
 
