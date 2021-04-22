@@ -10,7 +10,7 @@ class Szamok:
     screen = Screen()
 
     def trapezbal(self):
-        self.turtle.fillcolor('red')
+        self.turtle.fillcolor('lightgreen')
         self.turtle.begin_fill()
         self.turtle.forward(hosszuvonal)
         self.turtle.left(135)
@@ -26,7 +26,7 @@ class Szamok:
         self.turtle.end_fill()
 
     def emerald(self):
-        self.turtle.fillcolor('red')
+        self.turtle.fillcolor('lightgreen')
         self.turtle.begin_fill()
         self.turtle.left(225)
         self.turtle.forward(20)
@@ -251,7 +251,7 @@ class Szamok:
         self.turtle.setheading(rot)
 
     def kistrapezbal(self):
-        self.turtle.fillcolor('red')
+        self.turtle.fillcolor('lightgreen')
         self.turtle.begin_fill()
         self.turtle.forward(hosszuvonal / 2)
         self.turtle.left(135)
@@ -267,7 +267,7 @@ class Szamok:
         self.turtle.end_fill()
 
     def kisemerald(self):
-        self.turtle.fillcolor('red')
+        self.turtle.fillcolor('lightgreen')
         self.turtle.begin_fill()
         self.turtle.left(225)
         self.turtle.forward(10)
@@ -288,7 +288,7 @@ class Szamok:
         x = self.turtle.xcor()
         y = self.turtle.ycor()
         rot = self.turtle.heading()
-        self.turtle.fillcolor('red')
+        self.turtle.fillcolor('lightgreen')
         self.turtle.begin_fill()
         self.turtle.left(225)
         self.turtle.forward(10)

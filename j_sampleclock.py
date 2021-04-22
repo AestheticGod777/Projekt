@@ -30,6 +30,12 @@ class SampleClock:
         self.pontrajzoloketto.turtle.forward(80)
         self.pontrajzoloegy.turtle.forward(75)
         self.pontrajzoloketto.turtle.forward(75)
+        self.pontrajzoloegy.turtle.left(90)
+        self.pontrajzoloketto.turtle.left(90)
+        self.pontrajzoloegy.turtle.forward(100)
+        self.pontrajzoloketto.turtle.forward(100)
+        self.pontrajzoloegy.turtle.right(90)
+        self.pontrajzoloketto.turtle.right(90)
         self.hourleft.turtle.backward(400)
         self.hourright.turtle.backward(280)
         self.minuteleft.turtle.backward(50)
@@ -41,12 +47,14 @@ class SampleClock:
 
 
     def emeraldka(self):
+        self.pontrajzoloegy.turtle.hideturtle()
         self.pontrajzoloegy.turtle.clear()
         self.pontrajzoloegy.kotojel()
         self.pontrajzoloegy.turtle.speed(0)
         delay(0)
 
     def emeraldkaketto(self):
+        self.pontrajzoloketto.turtle.hideturtle()
         self.pontrajzoloketto.turtle.clear()
         self.pontrajzoloketto.kotojel()
         self.pontrajzoloketto.turtle.speed(0)
