@@ -26,8 +26,8 @@ class SampleClock:
         self.hourright.turtle.backward(280)
         self.minuteleft.turtle.backward(50)
         self.minuteright.turtle.forward(70)
-        self.secondleft.turtle.forward(180)
-        self.secondright.turtle.forward(260)
+        self.secondleft.turtle.forward(190)
+        self.secondright.turtle.forward(270)
         self.clk.setOnSecondChangeListener(self.writeSec)
         self.scr.mainloop()
 
