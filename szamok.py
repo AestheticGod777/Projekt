@@ -283,6 +283,22 @@ class Szamok:
         self.turtle.right(45)
         self.turtle.end_fill()
 
+    def kisnulla(self, turtle):
+        x = self.turtle.xcor()
+        y = self.turtle.ycor()
+        rot = self.turtle.heading()
+        self.kistrapezbal()
+        turtle.left(90)
+        self.kistrapezbal()
+        self.kistrapezbal()
+        turtle.left(90)
+        self.kistrapezbal()
+        turtle.left(90)
+        self.kistrapezbal()
+        self.kistrapezbal()
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
+
     def kisegy(self, turtle):
         x = self.turtle.xcor()
         y = self.turtle.ycor()
