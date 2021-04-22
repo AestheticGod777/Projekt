@@ -1,7 +1,6 @@
 from turtle import *
 from j_clock import *
 from szamok import *
-import time
 
 class SampleClock:
 
@@ -23,14 +22,22 @@ class SampleClock:
         self.minuteright = Szamok()
         self.hourleft = Szamok()
         self.hourright = Szamok()
-        self.hourleft.turtle.backward(325)
-        self.hourright.turtle.backward(175)
-        self.minuteleft.turtle.forward(60)
-        self.minuteright.turtle.forward(210)
+        self.hourleft.turtle.backward(400)
+        self.hourright.turtle.backward(280)
+        self.minuteleft.turtle.backward(50)
+        self.minuteright.turtle.forward(70)
+        self.secondleft.turtle.forward(180)
+        self.secondright.turtle.forward(260)
         self.clk.setOnSecondChangeListener(self.writeSec)
         self.scr.mainloop()
 
     def teszt(self):
+        self.secondleft.turtle.hideturtle()
+        self.secondright.turtle.hideturtle()
+        self.minuteleft.turtle.hideturtle()
+        self.minuteright.turtle.hideturtle()
+        self.hourleft.turtle.hideturtle()
+        self.hourright.turtle.hideturtle()
         self.hourright.turtle.clear()
         self.hourleft.turtle.clear()
 
@@ -149,7 +156,7 @@ class SampleClock:
             self.minuteleft.turtle.speed(0)
             delay(0)
 
-        if (self.clk.rightNumber(self.clk.min())) == 6:
+        if (self.clk.leftNumber(self.clk.min())) == 6:
             self.minuteleft.turtle.speed(0)
             self.minuteleft.hat(self.minuteleft.turtle)
             self.minuteleft.turtle.speed(0)
