@@ -4,7 +4,6 @@ hosszuvonal = 98
 rovidvonal = 20
 kozepesvonal = 70
 
-
 class Szamok:
 
     screen = Screen()
@@ -68,7 +67,9 @@ class Szamok:
         turtle.left(90)
         self.trapezbal()
         self.trapezbal()
+        turtle.penup()
         self.turtle.goto(x, y)
+        turtle.pendown()
         self.turtle.setheading(rot)
 
     def ketto(self, turtle):
@@ -332,7 +333,9 @@ class Szamok:
         turtle.left(90)
         self.kistrapezbal()
         self.kistrapezbal()
+        turtle.penup()
         self.turtle.goto(x, y)
+        turtle.pendown()
         self.turtle.setheading(rot)
 
     def kisketto(self, turtle):
