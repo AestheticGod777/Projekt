@@ -506,6 +506,5 @@ class Szamok:
         self.turtle.setheading(rot)
 
     def __init__(self):
-        screen = Screen()
         self.turtle = Turtle()
         self.turtle.speed(0)
