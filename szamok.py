@@ -481,6 +481,8 @@ class Szamok:
         self.kisemerald()
         turtle.backward(hosszuvonal / 2)
         turtle.setheading(0)
+        self.turtle.goto(x, y)
+        self.turtle.setheading(rot)
 
     def kiskilenc(self, turtle):
         x = self.turtle.xcor()
@@ -504,6 +506,6 @@ class Szamok:
         self.turtle.setheading(rot)
 
     def __init__(self):
-        self.turtle = Turtle()
         screen = Screen()
+        self.turtle = Turtle()
         self.turtle.speed(0)
